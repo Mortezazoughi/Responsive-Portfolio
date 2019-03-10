@@ -64,9 +64,10 @@ h3 {
 }
 
 #logo {
+  
   float: left;
-  width: 250px;
-  height: 90px;
+  width: 300px;
+  height: 100%;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
   font-weight: 700;
@@ -79,7 +80,7 @@ h3 {
 
 nav {
   float: right;
-  margin-top: 25px;
+  margin-top: 20px;
 }
 
 nav a {
@@ -214,4 +215,34 @@ input[type=submit] {
   cursor: pointer;
   background: #4aaaa5;
   border: 0 none;
+}
+
+/* applying media querry */
+
+@media(max-width: 990px) {
+  nav {
+    padding-right: 5%;
+  }
+}
+
+
+@media(max-width: 768px) {
+  nav {
+    padding-right: 5%;
+  }
+
+}
+
+
+@media(max-width: 640px) {
+  #logo {
+    width: 100%;
+  }
+  nav {
+    margin-right: 30%;
+  }
+  .work {
+  width: 100%;
+  
+  }
 }
